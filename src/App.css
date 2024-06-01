@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+.noto-sans-kr{
+  font-family: "Noto Sans KR", sans-serif;
+}
+.ibm-plex-sans-kr-regular {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-style: normal;
+}
+.bg-hanyang-blue {
+  background-color: #0e4a84;
+}
+
+.bg-hanyang-silver {
+  background-color: #898c8e;
+}
+.hanyang-blue {
+  color: #0e4a84;
+}
+.hanyang-silver {
+  color: #898c8e;
+}
+.card-image {
+  height: 0;
+  padding-bottom: 60%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-image img {
+  display: none;
+}
+
+.card-desc {
+  padding: 1em;
+  background: white;
+  min-height: 250px;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.forif_bg_img {
+  background-image: url("./images/forif_image.svg");
+  background-size: contain;
+}
+.infren_bg {
+  background-image: url("./images/cssflexgrid.jpg");
+  background-size: contain;
+}
+.portafolio-bg {
+  background-image: url("./images/webpage1.png");
+  background-size: 97%;
+  background-position: center;
+}
+.cover {
+  background-color: rgba(121, 85, 38, 0.65);
+
+}
+.top-bg {
+  background-image: url("./images/home-office.jpg");
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-size: cover;
+  background-position: top;
+}
+.nanum-pen-script-regular {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+}
+@keyframes animateShow {
+  from {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.bg-text {
+  animation: animateShow 1s ease-out;
+}
+
+.slide {
+  transform: translateX(-100%);
+  transition-duration:0.5s;
+}
+.azurlane{
+  background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+}
+.lithium{
+  background: #6D6027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D3CBB8, #6D6027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.hover-outline-blue:hover{
+  outline:4px solid #3498db;
+}
