@@ -1,8 +1,7 @@
 import "./App.css";
-import Footer from "./components/footer";
-import React, { useEffect, useState } from "react";
-import AboutMe from "./components/Aboutme";
 import Nav from "./components/navbar_menu";
+import Footer from "./components/footer";
+import AboutMe from "./components/Aboutme";
 import Skills from "./components/skills";
 import Content from "./components/content";
 import Background_top from "./components/Background_top";
