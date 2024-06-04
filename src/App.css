@@ -3,7 +3,7 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -11,8 +11,16 @@
   border: 0;
   scroll-behavior: smooth;
 }
-.noto-sans-kr{
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.noto-sans-kr {
   font-family: "Noto Sans KR", sans-serif;
+}
+.nanum-pen-script-regular {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
 }
 .ibm-plex-sans-kr-regular {
   font-family: "IBM Plex Sans KR", sans-serif;
@@ -69,7 +77,6 @@
 }
 .cover {
   background-color: rgba(121, 85, 38, 0.65);
-
 }
 .top-bg {
   background-image: url("./images/home-office.jpg");
@@ -77,10 +84,6 @@
   height: 70vh;
   background-size: cover;
   background-position: top;
-}
-.nanum-pen-script-regular {
-  font-family: "Nanum Pen Script", cursive;
-  font-weight: 400;
 }
 @keyframes animateShow {
   from {
@@ -108,18 +111,71 @@
 
 .slide {
   transform: translateX(-100%);
-  transition-duration:0.5s;
+  transition-duration: 0.5s;
 }
-.azurlane{
-  background: #7F7FD5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+.azurlane {
+  background: #7f7fd5;
+  background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
 }
-.lithium{
-  background: #6D6027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #D3CBB8, #6D6027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.lithium {
+  background: #6d6027;
+  background: -webkit-linear-gradient(
+    to right,
+    #d3cbb8,
+    #6d6027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #d3cbb8,
+    #6d6027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.hover-outline-blue:hover{
-  outline:4px solid #3498db;
+.grayright {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.grayup {
+  background: #bdc3c7;
+  background: -webkit-linear-gradient(
+    to top,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.hover-outline-blue:hover {
+  outline: 4px solid #3498db;
+}
+@media (min-width: 1024px) {
+  .Myworks-bg {
+    background: #bdc3c7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);
+    background: linear-gradient(to left, #2c3e50, #bdc3c7);
+  }
+}
+
+@media (min-width: 768px) {
+  .card-width {
+    width: 50%;
+  }
+}
+@media (min-width: 1500px) {
+  .card-width {
+    width: 33%;
+  }
 }
