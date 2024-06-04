@@ -18,7 +18,7 @@ function App() {
       >
         <AboutMe />
       </div>
-      <div className="w-full h-60 bg-orange-300"></div>
+      <div className="w-full h-60 flex flex-row justify-center items-center bg-orange-300"><p className="nanum-pen-script-regular whitespace-nowrap text-7xl md:text-7xl hover:animate-bounce">Hello World!</p></div>
       <div className="w-full flex flex-col lg:flex-row h-fit mt-20">
         <Skills />
         <Content />
